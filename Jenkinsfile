@@ -22,7 +22,7 @@ environment {
         stage("test"){
             steps{
                 echo "----test started------"
-                sh 'mvn sunfire-report:report'
+                sh 'mvn surefire-report:report'
                 echo "----unit test completed---------"
             }
         }
