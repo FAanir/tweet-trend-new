@@ -17,5 +17,20 @@ environment {
             }
         }
 
+        stage('SonarQube analysis'){
+            environment{
+                scannerHome = tool 'ani-sonar-scanner'
+            }
+            steps{
+                withSonarQubeEnv('ani-sonar-server'){
+                    sh "${scannerHome}/bin/sonar-scanner"
+                }
+            }
+        }
+
+        
+
     }
 }
+
+
