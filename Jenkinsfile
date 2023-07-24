@@ -69,7 +69,7 @@ environment {
         steps {
             script {
                echo '<--------------- Docker Publish Started --------------->'  
-                docker.withRegistry(registry, 'artifact-cred'){
+                docker.withRegistry(registry, 'latest-token'){
                     app.push()
                 }    
                echo '<--------------- Docker Publish Ended --------------->'  
