@@ -90,7 +90,7 @@
 				<configuration>
 					<argLine>${argLine} -Xmx2048m</argLine>
 				</configuration>
-				<optional>true</optional>
+				
 			</plugin>
 
 			<plugin>
