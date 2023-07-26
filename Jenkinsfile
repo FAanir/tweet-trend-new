@@ -1,6 +1,6 @@
 def registry ='https://aniruddhajfrog.jfrog.io'
 def imageName = 'aniruddhajfrog.jfrog.io/aniruddhad-docker-local/ttrend'
-def version   = '2.1.2'
+def version   = '2.1.3'
 pipeline {
     agent {
         node {
