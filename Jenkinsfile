@@ -80,6 +80,7 @@ environment {
     stage("deploy k8s files"){
         steps{
             script{
+                echo '<--------------- k8s deplo Publish Started --------------->'  
                 sh './deploy.sh'
             }
         }
